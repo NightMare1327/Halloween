@@ -1,0 +1,262 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
+}
+.bg {
+  background: url(../img/banner.png) no-repeat center;
+  background-size: cover;
+  text-align: center;
+  height: 100vh;
+  position: relative;
+  z-index: -1;
+}
+.title {
+  position: absolute;
+  top: calc(50% - 124px - 75px);
+  left: 0;
+  right: 0;
+}
+.wrapper {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.wrapper-gray {
+  background-color: #f7f7f7;
+}
+.title h1 {
+  color: #ffffff;
+  font-size: 64px;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 95px;
+  margin: 0 auto;
+}
+.title p {
+  color: #ffffff;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 65px;
+}
+.stat {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  max-width: 780px;
+  margin: -150px auto 0;
+  padding-top: 70px;
+  padding-bottom: 35px;
+}
+.stat-items h2 {
+  font-size: 72px;
+  color: #f7654a;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.stat-items h3 {
+  font-size: 36px;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.stat-items p {
+  color: #999999;
+  margin-top: 0;
+}
+.box-party {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 55px;
+  margin-bottom: 85px;
+}
+.box-party > div {
+  flex-basis: 31.5%;
+  max-width: 31.5%;
+}
+.box-party img {
+  width: 100%;
+}
+.box-party h3 {
+  position: relative;
+  padding-top: 25px;
+  margin-top: 45px;
+  letter-spacing: 1.4px;
+}
+.box-party h3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 55px;
+  height: 6px;
+  background-color: #f7654a;
+}
+.contact {
+  background-color: #f7654a;
+  color: #ffffff;
+  padding: 40px 0;
+}
+.box-contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.box-contact h3 {
+  font-size: 48px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.box-contact p {
+  font-size: 24px;
+  margin-bottom: 0;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+.box-contact button {
+  background-color: #fff;
+  border: none;
+  padding: 15px 20px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.box-contact img {
+  padding-right: 10px;
+  vertical-align: middle;
+}
+.grid {
+  text-align: center;
+  display: grid;
+  grid-template-areas: "a b c" "d e f";
+  grid-gap: 30px;
+  margin-top: 60px;
+  margin-bottom: 145px;
+}
+.grid-item h3 {
+  font-size: 21px;
+  text-transform: uppercase;
+  line-height: 1.5;
+  margin-top: 15px;
+}
+.grid-item {
+  background-color: #f7f7f7;
+  padding: 55px 30px 35px;
+}
+.grid-one {
+  grid-area: a;
+}
+.grid-two {
+  grid-area: b;
+}
+.grid-three {
+  grid-area: c;
+}
+.grid-four {
+  grid-area: d;
+}
+.grid-five {
+  grid-area: e;
+}
+.grid-six {
+  grid-area: f;
+}
+.grid-photo {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.grid-photo-item {
+  height: 100%;
+  position: relative;
+}
+.grid-photo-item::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: rgba(64, 65, 73, 0.5);
+  transition: 0.5s;
+}
+.grid-photo-item:hover::before {
+  background-color: rgba(64, 65, 73, 0);
+}
+.grid-photo-item img {
+  height: 100%;
+  width: 100%;
+}
+.box-feedback {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 55px;
+  margin-bottom: 125px;
+}
+.box-feedback > div {
+  box-sizing: content-box;
+  flex-basis: 31.5%;
+  max-width: 31.5%;
+}
+.feedback {
+  background: #f7f7f7;
+  color: #999999;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  padding: 30px 30px;
+  margin-bottom: 30px;
+}
+.feedback::before {
+  content: "";
+  background: url("../img/bq.svg") no-repeat;
+  display: block;
+  width: 34px;
+  height: 28px;
+  margin-bottom: 20px;
+}
+.name {
+  font-size: 21px;
+  line-height: 31px;
+}
+.footer-contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin-top: 60px;
+}
+.footer-contact h3 {
+  color: #999999;
+  font-size: 24px;
+  font-weight: normal;
+}
+.footer-contact-info {
+  font-size: 24px;
+  line-height: 36px;
+}
+.footer {
+  background: #404149;
+  padding: 30px 0;
+  margin-top: 130px;
+}
+.box-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 22px;
+}
